@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import {
   ArrowLeftRight,
+  Github,
   Home,
+  Instagram,
   LockKeyhole,
   LogOut,
   PieChart,
@@ -84,6 +86,40 @@ const Sidebar = () => {
         <LogOut size={16} />
         Logout
       </button>
+
+      <div className="mt-auto hidden border-t border-gray-100 px-4 pt-4 lg:block">
+        <p className="text-[10px] uppercase tracking-widest text-gray-300">Developer</p>
+        <div className="mt-2 flex items-center justify-between gap-3">
+          <a
+            href="https://github.com/razi-vayalkara"
+            target="_blank"
+            rel="noreferrer"
+            className="min-w-0 truncate text-xs font-medium text-gray-500 transition hover:underline"
+          >
+            Razi Vayalkara
+          </a>
+          <div className="flex shrink-0 items-center gap-1">
+            <a
+              href="https://github.com/razi-vayalkara"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-7 w-7 items-center justify-center rounded-lg text-gray-400 transition hover:bg-gray-50 hover:text-gray-700"
+              aria-label="GitHub"
+            >
+              <Github size={15} />
+            </a>
+            <a
+              href="https://instagram.com/razi.developer"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-7 w-7 items-center justify-center rounded-lg text-gray-400 transition hover:bg-gray-50 hover:text-gray-700"
+              aria-label="Instagram"
+            >
+              <Instagram size={15} />
+            </a>
+          </div>
+        </div>
+      </div>
       </div>
     </aside>
   );
