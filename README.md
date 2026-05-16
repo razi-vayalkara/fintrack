@@ -54,6 +54,42 @@ npm install
 npm run install:all
 ```
 
+## Setup
+
+1. Clone or open the project folder.
+2. Install the root helper dependencies:
+
+```bash
+npm install
+```
+
+3. Install client and server dependencies:
+
+```bash
+npm run install:all
+```
+
+4. Add your MongoDB URI and JWT secret in `.env`:
+
+```env
+MONGO_URI=your_mongodb_uri
+PORT=5000
+CLIENT_URL=http://localhost:5173
+JWT_SECRET=your_long_random_secret
+```
+
+5. Start the app:
+
+```bash
+npm run dev
+```
+
+6. Open the client in your browser:
+
+```text
+http://localhost:5173
+```
+
 ## Run Development
 
 ```bash
@@ -122,3 +158,11 @@ Lockers:
 - Locker amounts are independent saved balances. They do not affect income, expenses, transaction totals, or net balance.
 - Deleting an account removes all user-owned finance data.
 - The Vite build may show a chunk-size warning because of charting and routing dependencies. It is not a build failure.
+
+## Developer
+
+Developed by **[Razi Vayalkara](https://github.com/razivayalkara)**.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
